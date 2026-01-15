@@ -32,7 +32,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>load-customers</name>
+      <name>load-customers.hpl</name>
       <description/>
       <type>PIPELINE</type>
       <attributes/>
@@ -42,7 +42,9 @@
       <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
       <exec_per_row>N</exec_per_row>
-      <filename>C:\Users\samca\Downloads\load-customers.hpl</filename>
+      <filename>${PROJECT_HOME}/load-customers.hpl</filename>
+      <logext/>
+      <logfile/>
       <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
@@ -58,12 +60,11 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>Table exists</name>
+      <name>customer-table-exists</name>
       <description/>
       <type>TABLE_EXISTS</type>
       <attributes/>
       <connection>customers_db</connection>
-      <schemaname>customers_db</schemaname>
       <tablename>customers</tablename>
       <parallel>N</parallel>
       <xloc>272</xloc>
@@ -71,7 +72,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>SQL</name>
+      <name>make-customer-table</name>
       <description/>
       <type>SQL</type>
       <attributes/>
@@ -91,7 +92,6 @@
 , state VARCHAR(100)
 )
 ;</sql>
-      <sqlfilename/>
       <sqlfromfile>N</sqlfromfile>
       <useVariableSubstitution>N</useVariableSubstitution>
       <parallel>N</parallel>
@@ -103,28 +103,28 @@
   <hops>
     <hop>
       <from>Start</from>
-      <to>Table exists</to>
+      <to>customer-table-exists</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>Table exists</from>
-      <to>load-customers</to>
+      <from>customer-table-exists</from>
+      <to>load-customers.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Table exists</from>
-      <to>SQL</to>
+      <from>customer-table-exists</from>
+      <to>make-customer-table</to>
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>SQL</from>
-      <to>load-customers</to>
+      <from>make-customer-table</from>
+      <to>load-customers.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
