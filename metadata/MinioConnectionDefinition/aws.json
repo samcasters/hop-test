@@ -1,0 +1,12 @@
+{
+  "endPointHostname": "s3.us-east-1.amazonaws.com",
+  "virtualPath": "",
+  "secretKey": "Encrypted 797767527268752f64496a367136797245706f574d7a6b40ceedd7a501c09cd4f932fd7df4a7bfff",
+  "accessKey": "Encrypted 31354734f6d9e9fd5ef5b0b38d379f57f5ca9d88",
+  "partSize": "5242880",
+  "name": "aws",
+  "description": "",
+  "endPointPort": "443",
+  "endPointSecure": true,
+  "region": "us-east-1"
+}

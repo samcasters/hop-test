@@ -65,6 +65,7 @@
       <type>TABLE_EXISTS</type>
       <attributes/>
       <connection>customers_db</connection>
+      <schemaname/>
       <tablename>customers</tablename>
       <parallel>N</parallel>
       <xloc>272</xloc>
