@@ -6,7 +6,7 @@
       "pluginId": "MYSQL",
       "accessType": 0,
       "hostname": "${DB_HOSTNAME}",
-      "password": "Encrypted 2be989dfe24c8978fa21c9e7fdb99a6df",
+      "password": "${DB_PASSWORD}",
       "pluginName": "MySQL",
       "port": "${DB_PORT}",
       "driverClassName": "Mysql 8+",
@@ -22,7 +22,7 @@
         "PREFERRED_SCHEMA_NAME": ""
       },
       "manualUrl": "",
-      "username": "root"
+      "username": "${DB_USERNAME}"
     }
   },
   "name": "customers_db"
