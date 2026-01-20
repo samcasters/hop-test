@@ -25,5 +25,5 @@
       "username": "${DB_USERNAME}"
     }
   },
-  "name": "customers_db"
+  "name": "MySQL"
 }
