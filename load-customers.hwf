@@ -62,7 +62,7 @@
       <description/>
       <type>TABLE_EXISTS</type>
       <attributes/>
-      <connection>customers_db</connection>
+      <connection>MySQL</connection>
       <tablename>customers</tablename>
       <parallel>N</parallel>
       <xloc>336</xloc>
@@ -74,7 +74,7 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <connection>customers_db</connection>
+      <connection>MySQL</connection>
       <sendOneStatement>N</sendOneStatement>
       <sql>CREATE TABLE customers
 (
@@ -102,14 +102,14 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <connection>customers_db</connection>
+      <connection>MySQL</connection>
       <sendOneStatement>N</sendOneStatement>
       <sql>CREATE DATABASE IF NOT EXISTS customers_db;</sql>
       <sqlfilename/>
       <sqlfromfile>N</sqlfromfile>
       <useVariableSubstitution>N</useVariableSubstitution>
       <parallel>N</parallel>
-      <xloc>176</xloc>
+      <xloc>192</xloc>
       <yloc>80</yloc>
       <attributes_hac/>
     </action>
