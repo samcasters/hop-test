@@ -282,7 +282,7 @@
     <auto_update_table_structure>N</auto_update_table_structure>
     <change_column_types>N</change_column_types>
     <commit>1000</commit>
-    <connection>customers_db</connection>
+    <connection>MySQL</connection>
     <drop_columns>N</drop_columns>
     <fields>
 </fields>
