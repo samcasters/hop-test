@@ -1,0 +1,29 @@
+{
+  "virtualPath": "",
+  "rdbms": {
+    "MYSQL": {
+      "databaseName": "${DB_NAME}",
+      "pluginId": "MYSQL",
+      "accessType": 0,
+      "hostname": "${DB_HOSTNAME}",
+      "password": "${DB_PASSWORD}",
+      "pluginName": "MySQL",
+      "port": "${DB_PORT}",
+      "driverClassName": "Mysql 8+",
+      "attributes": {
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "Y",
+        "QUOTE_ALL_FIELDS": "N",
+        "STREAM_RESULTS": "Y",
+        "SUPPORTS_BOOLEAN_DATA_TYPE": "Y",
+        "FORCE_IDENTIFIERS_TO_LOWERCASE": "N",
+        "PRESERVE_RESERVED_WORD_CASE": "Y",
+        "SQL_CONNECT": "",
+        "FORCE_IDENTIFIERS_TO_UPPERCASE": "N",
+        "PREFERRED_SCHEMA_NAME": ""
+      },
+      "manualUrl": "",
+      "username": "${DB_USERNAME}"
+    }
+  },
+  "name": "customers_db"
+}

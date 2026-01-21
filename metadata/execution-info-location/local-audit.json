@@ -1,9 +1,9 @@
 {
   "executionInfoLocation": {
-    "local-folder": {
-      "pluginName": "File location",
-      "pluginId": "local-folder",
-      "rootFolder": "${HOP_AUDIT_FOLDER}/executions/"
+    "caching-file-location": {
+      "persistenceDelay": "5000",
+      "rootFolder": "${LOGGING_LOCATION}",
+      "maxCacheAge": "86400000"
     }
   },
   "dataLoggingDelay": "2000",
