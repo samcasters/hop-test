@@ -63,6 +63,7 @@
       <type>TABLE_EXISTS</type>
       <attributes/>
       <connection>MySQL</connection>
+      <schemaname>${DB_NAME}</schemaname>
       <tablename>customers</tablename>
       <parallel>N</parallel>
       <xloc>336</xloc>
@@ -105,7 +106,6 @@
       <connection>MySQL</connection>
       <sendOneStatement>N</sendOneStatement>
       <sql>CREATE DATABASE IF NOT EXISTS customers_db;</sql>
-      <sqlfilename/>
       <sqlfromfile>N</sqlfromfile>
       <useVariableSubstitution>N</useVariableSubstitution>
       <parallel>N</parallel>
