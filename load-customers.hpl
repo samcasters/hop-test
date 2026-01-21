@@ -294,7 +294,7 @@
     <partitioning_monthly>Y</partitioning_monthly>
     <return_field/>
     <return_keys>N</return_keys>
-    <schema>customers_db</schema>
+    <schema>${DB_NAME}</schema>
     <specify_fields>N</specify_fields>
     <table>customers</table>
     <tablename_field/>
