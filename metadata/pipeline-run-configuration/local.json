@@ -7,7 +7,7 @@
       "wait_time": "20",
       "rowset_size": "10000",
       "safe_mode": false,
-      "show_feedback": true,
+      "show_feedback": false,
       "topo_sort": false,
       "gather_metrics": false,
       "transactional": false
